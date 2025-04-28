@@ -1,7 +1,7 @@
 "use strict";
 
 //url for fetching api
-let url = "https://test-vmk0.onrender.com/workexperience"
+let url = "https://test-4f8c.onrender.com/workexperience"
 //ul element from DOM
 const listEl = document.getElementById("explist")
 
@@ -33,7 +33,7 @@ async function getData() {
 
 async function deleteData(id, liEl) {
     try { //fetch API with method DELETE, delete experience with chosen ID
-        const response = await fetch(`https://test-vmk0.onrender.com/workexperience/${id}`, {
+        const response = await fetch(`https://test-4f8c.onrender.com/workexperience/${id}`, {
             method: 'DELETE',
             headers: {
                 "Content-Type": "application/json"
