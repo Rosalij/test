@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 2</title>
+    <script src="src/js/script.js" defer></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+    <header>
+    
+
+        <div class="menu">    <p id="headertext">Moment 2 Backend</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Your work experience</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="current" href="addexperiences.html">Add experiences</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Add a new work experience:</h1>
+        </article>
+        <form method="POST" action="/workexperience">
+            <label for="company">Company</label>
+            <input id ="company" name="company" />
+            <label for="Jobtitle">Job title</label>
+            <input id="jobtitle" name="jobtitle" />
+            <label for="location">location</label>
+            <input id="location" name="location" />
+            <br><br>
+            <a href="#" id="submit">Add work experience</a>
+        </form>
+    </main>
+    <!--footer-->
+    <footer>
+        <p>Laborationsuppgift för kursen Backend-baserad utveckling
+        </p>
+        <p>Mittuniversitetet</p>
+        <p>Copyright © 2025 Rosali Johansson</p>
+    </footer>
+</body>
+
+</html>
