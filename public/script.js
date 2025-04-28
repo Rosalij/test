@@ -1,7 +1,7 @@
 "use strict";
 
 //url for fetching api
-let url = "http://127.0.0.1:3000/workexperience"
+let url = "https://test-vmk0.onrender.com/workexperience"
 //ul element from DOM
 const listEl = document.getElementById("explist")
 
@@ -33,7 +33,7 @@ async function getData() {
 
 async function deleteData(id, liEl) {
     try { //fetch API with method DELETE, delete experience with chosen ID
-        const response = await fetch(`http://127.0.0.1:3000/workexperience/${id}`, {
+        const response = await fetch(`https://test-vmk0.onrender.com/workexperience/${id}`, {
             method: 'DELETE',
             headers: {
                 "Content-Type": "application/json"
