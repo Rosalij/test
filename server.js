@@ -5,7 +5,7 @@ const cors = require('cors');
 require('dotenv').config();
 const sqlite3 = require('sqlite3').verbose();
 
-// Open (or create) a database
+//use database
 const db = new sqlite3.Database('./database.db', (err) => {
     if (err) {
         console.error("Failed to open database:", err.message);
@@ -50,7 +50,7 @@ app.put("/workexperience/:id", (req, res) => {
     //database query
     const query = `UPDATE experiences SET company = ?, jobtitle = ?, location = ? WHERE id = ?`;
 
-    connection.query(query, [company, jobtitle, location, id], function (err) {
+    db.run(query, [company, jobtitle, location, id], function (err) {
         if (err) { //if error
             console.error("update failed: " + err);
             return res.status(500).json({ error: "failed to update work experience" });
