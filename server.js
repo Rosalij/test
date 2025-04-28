@@ -2,7 +2,6 @@
 //package requirements
 const express = require('express');
 const cors = require('cors');
-const mysql = require('mysql');
 require('dotenv').config();
 const sqlite3 = require('sqlite3').verbose();
 
